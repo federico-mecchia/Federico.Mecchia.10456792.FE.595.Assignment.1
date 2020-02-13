@@ -53,30 +53,38 @@ import numpy as np
 
 import matplotlib.pyplot as plt
 
-xop1 = np.linspace(0, 2*np.pi, num=500)
 
-y1op1 = np.sin(xop1)
+def sincos_option1():
 
-y2op1 = np.cos(xop1)
+  xop1 = np.linspace(0, 2*np.pi, num=500)
 
-plt.plot(xop1, y1op1, 'green', label='Sine Function')
+  y1op1 = np.sin(xop1)
 
-plt.plot(xop1, y2op1, 'orange', label='Cosine Function')
+  y2op1 = np.cos(xop1)
 
-plt.grid('True')
+  plt.plot(xop1, y1op1, 'green', label='Sine Function')
 
-plt.title('Graph of One Period of Sine and Cosine functions', fontsize=15)
+  plt.plot(xop1, y2op1, 'orange', label='Cosine Function')
 
-plt.xlabel('x')
+  plt.grid('True')
 
-plt.ylabel('sin(x) and cos(x)')
+  plt.title('Graph of One Period of Sine and Cosine functions', fontsize=15)
 
-plt.legend()
+  plt.xlabel('x')
 
-plt.show()
+  plt.ylabel('sin(x) and cos(x)')
 
+  plt.legend()
 
+  plt.show()  
+  
 
+if __name__ == "__main__":
+
+    sincos_option1() 
+  
+  
+  
 # Option 2
 
 
@@ -85,34 +93,43 @@ import numpy as np
 
 import matplotlib.pyplot as plt
 
-xop2 = np.arange(0, 2*np.pi, step=0.001)
 
-y1op2 = np.sin(xop2)
+def sincos_option2():
 
-y2op2 = np.cos(xop2)
+  xop2 = np.arange(0, 2*np.pi, step=0.001)
 
-plt.plot(xop2, y1op2, 'red', label='Sine Function')
+  y1op2 = np.sin(xop2)
 
-plt.plot(xop2, y2op2, 'blue', label='Cosine Function')
+  y2op2 = np.cos(xop2)
 
-plt.grid('True')
+  plt.plot(xop2, y1op2, 'red', label='Sine Function')
 
-plt.title('Graph of One Period of Sine and Cosine functions', fontsize=15)
+  plt.plot(xop2, y2op2, 'blue', label='Cosine Function')
 
-plt.xlabel('x')
+  plt.grid('True')
 
-plt.ylabel('sin(x) and cos(x)')
+  plt.title('Graph of One Period of Sine and Cosine functions', fontsize=15)
 
-plt.legend()
+  plt.xlabel('x')
 
-plt.show()
+  plt.ylabel('sin(x) and cos(x)')
 
+  plt.legend()
 
+  plt.show()
+
+  
+if __name__ == "__main__":
+
+    sincos_option2()
+    
+        
 
 # Comment
 
-# First I import "numpy" and "matplotlib.pyplot".
-# I then generate the values of "x", identified by "xop1" in "Option 1"
+# First I imported "numpy" and "matplotlib.pyplot".
+# I then used "def()" to define the functions of "Option 1" and of "Option 2"
+# and I also generated the values of "x", identified by "xop1" in "Option 1"
 # and by "xop2" in "Option 2". I created "xop1" in "Option 1" and "xop2"
 # in "Option 2" by using different methods. To this regard, in fact, I created
 # "xop1" by using "np.linspace()" and by including in the brackets "0", which
@@ -134,8 +151,10 @@ plt.show()
 # In addition to this, I also used "plt.grid()" and included "True" in the
 # brackets to display the grid in the plot, "plt.title()" to add the
 # title (I also selected the "fontsize"), "plt.xlabel()" to give a name to
-# the "x-axis", "plt.ylabel()" to give a name to the "y-axis" and
-# "plt.legend()" to display the legend.
-# Lastly I used "plt.show()" to display the graphs.
+# the "x-axis", "plt.ylabel()" to give a name to the "y-axis",
+# "plt.legend()" to display the legend and "plt.show()" to display the
+# graphs.
+# Lastly, I used "if __name__ == "__main__":" and I also included
+# "sincos_option1()" in "Option 1" and "sincos_option2()" in "Option 2".
 
 
